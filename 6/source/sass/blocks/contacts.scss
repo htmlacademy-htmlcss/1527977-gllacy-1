@@ -1,0 +1,41 @@
+.contacts {
+  border-radius: 16px;
+  padding: 64px;
+  background-image: url("../images/background/contacts.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/background/contacts@2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-color: $additional-special-light;
+  display: grid;
+  grid-template-columns: 343px auto;
+}
+
+.contacts__title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+
+.contacts__info {
+  font-size: 20px;
+  line-height: 24px;
+  color: $basic-extra-dark;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.contacts__info--address {
+  font-style: normal;
+}
+
+.contacts__info--phone {
+  display: block;
+  margin-bottom: 0;
+}
+
+.contacts__note {
+  margin-bottom: 32px;
+}
