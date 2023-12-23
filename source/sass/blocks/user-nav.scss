@@ -1,4 +1,9 @@
 .user-nav {
-  min-width: 270px;
-  justify-content: flex-end;
+  gap: 16px;
+}
+
+.user-nav__item {
+  position: relative;
+  min-width: 32px;
+  min-height: 32px;
 }

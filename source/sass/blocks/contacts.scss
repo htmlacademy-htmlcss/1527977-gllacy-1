@@ -6,20 +6,17 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../images/background/contacts@2x.jpg");
   }
-}
-
-.contacts__container {
-  background-color: $basic-extra-light;
-  max-width: 343px;
-  min-height: 364px;
-  border-radius: 8px;
-  padding: 40px;
+  background-repeat: no-repeat;
+  background-color: $additional-special-light;
+  display: grid;
+  grid-template-columns: 343px auto;
 }
 
 .contacts__title {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+  margin: 0 0 12px;
 }
 
 .contacts__info {
@@ -27,6 +24,7 @@
   line-height: 24px;
   color: $basic-extra-dark;
   font-weight: 700;
+  margin: 0 0 24px;
 }
 
 .contacts__info--address {
@@ -35,4 +33,9 @@
 
 .contacts__info--phone {
   display: block;
+  margin-bottom: 0;
+}
+
+.contacts__note {
+  margin-bottom: 32px;
 }
