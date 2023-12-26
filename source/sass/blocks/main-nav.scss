@@ -1,10 +1,10 @@
 .main-nav {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 160px 268px;
+  grid-template-columns: 1fr 160px auto;
   align-items: center;
   color: $basic-extra-dark;
-  gap: 10px;
+  gap: 8px;
 }
 
 .main-nav__list {
@@ -17,6 +17,7 @@
 
 .main-nav__item {
   position: relative;
+  padding: 12px 0;
 
   &:hover .popover,
   &:focus-within .popover {
@@ -94,10 +95,12 @@
   &:hover {
     background-color: rgba($special-bright, 0.6);
   }
+
   &:focus {
     background-color: $special-bright;
     outline: solid 2px $black;
   }
+
   &:active {
     background-color: rgba($special-bright, 0.3);
     outline: transparent;

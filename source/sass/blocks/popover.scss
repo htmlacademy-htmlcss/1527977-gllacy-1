@@ -1,6 +1,6 @@
 .popover {
   position: absolute;
-  top: 40px;
+  top: 52px;
   right: 0;
   z-index: 1;
   width: 441px;
@@ -9,14 +9,6 @@
   border-radius: 4px;
   background-color: $basic-extra-light;
   padding: 48px;
-}
-
-.popover--open {
-  display: block;
-}
-
-.popover--close {
-  display: none;
 }
 
 .popover__content {

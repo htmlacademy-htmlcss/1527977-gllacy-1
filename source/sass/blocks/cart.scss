@@ -1,14 +1,30 @@
 .cart__popover {
-  box-shadow: 0px 15px 40px 0px rgba($basic-extra-dark, 0.12);
-}
-
-.cart__popover-empty {
-  display: none;
+  width: 288px;
   padding-left: 24px;
   padding-right: 24px;
-  width: 288px;
+  box-shadow: 0 15px 40px 0 rgba($basic-extra-dark, 0.12);
+}
+
+.cart__filled {
+  display: none;
+}
+
+.cart__popover--filled {
+  padding-left: 48px;
+  padding-right: 48px;
+  width: 441px;
+
+  .cart__filled {
+    display: flex;
+  }
+
+  .cart__empty {
+    display: none;
+  }
+}
+
+.cart__empty {
   text-align: center;
-  box-shadow: 0px 15px 40px 0px rgba($basic-extra-dark, 0.12);
 }
 
 .cart__list {

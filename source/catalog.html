@@ -26,34 +26,34 @@
             <a class="main-nav__link" href="catalog.html">
               Каталог
               <svg class="main-nav__link-icon" width="16" height="16" aria-hidden="true">
-                <use xlink:href="images/icons/stack.svg#arrow-down"></use>
+                <use href="images/icons/stack.svg#arrow-down"></use>
               </svg>
             </a>
             <div class="popover subcatalog__popover">
               <div class="popover__content">
                 <ul class="subcatalog__list">
                   <li class="subcatalog__item">
-                    <a class="subcatalog__link subcatalog__link--hero">
+                    <a class="subcatalog__link subcatalog__link--hero" href="#">
                       Новинки
                     </a>
                   </li>
                   <li class="subcatalog__item subcatalog__item--current">
-                    <a class="subcatalog__link">
+                    <a class="subcatalog__link" href="#">
                       Сливочное
                     </a>
                   </li>
                   <li class="subcatalog__item">
-                    <a class="subcatalog__link">
+                    <a class="subcatalog__link" href="#">
                       Щербеты
                     </a>
                   </li>
                   <li class="subcatalog__item">
-                    <a class="subcatalog__link">
+                    <a class="subcatalog__link" href="#">
                       Фруктовый лед
                     </a>
                   </li>
                   <li class="subcatalog__item">
-                    <a class="subcatalog__link">
+                    <a class="subcatalog__link" href="#">
                       Мелорин
                     </a>
                   </li>
@@ -79,7 +79,7 @@
           <li class="main-nav__item user-nav__item search">
             <a class="main-nav__link main-nav__link--user main-nav__link--user-no-text" href="#">
               <svg class="search__icon" width="16" height="16" aria-hidden="true">
-                <use xlink:href="images/icons/stack.svg#search"></use>
+                <use href="images/icons/stack.svg#search"></use>
               </svg>
               <span class="visually-hidden">
                 Поиск
@@ -94,7 +94,11 @@
                   </label>
                   <input class="form__input search__form-input" type="search" name="search-main"
                   id="search-main"  placeholder="Поиск по сайту" required>
-                  <button class="button button--cross search__button-reset" type="reset"></button>
+                  <button class="button button--cross search__button-reset" type="reset">
+                    <span class="visually-hidden">
+                      Удалить запрос
+                    </span>
+                  </button>
               </form>
               </div>
             </div>
@@ -102,7 +106,7 @@
           <li class="main-nav__item user-nav__item authorization">
             <a class="main-nav__link main-nav__link--user" href="#">
               <svg class="authorization__icon" width="16" height="16" aria-hidden="true">
-                <use xlink:href="images/icons/stack.svg#entry"></use>
+                <use href="images/icons/stack.svg#entry"></use>
               </svg>
               Вход
             </a>
@@ -128,8 +132,8 @@
                     Войти
                   </button>
                   <div class="authorization__help">
-                    <a class="authorization__help-link" href="">Забыли пароль?</a>
-                    <a class="authorization__help-link" href="">Регистрация</a>
+                    <a class="authorization__help-link" href="#">Забыли пароль?</a>
+                    <a class="authorization__help-link" href="#">Регистрация</a>
                   </div>
                 </form>
               </div>
@@ -138,15 +142,16 @@
           <li class="main-nav__item user-nav__item cart">
             <a class="main-nav__link main-nav__link--user" href="#">
               <svg class="cart__icon" width="16" height="16" aria-hidden="true">
-                <use xlink:href="images/icons/stack.svg#cart"></use>
+                <use href="images/icons/stack.svg#cart"></use>
               </svg>
               <span class="visually-hidden">
                 Корзина
               </span>
-              <span class="cart__count">2 товара</span>
+              <span class="cart__count">2</span>
+              <span class="cart__goods">товара</span>
             </a>
-            <div class="popover  cart__popover">
-              <div class="popover__content ">
+            <div class="popover cart__popover cart__popover--filled">
+              <div class="popover__content cart__filled">
                 <h2 class="popover__title">Корзина</h2>
                 <ul class="cart__list">
                   <li class="cart__item">
@@ -155,20 +160,20 @@
                       <img class="cart__item-photo" src="images/products/raspberry-cart.jpg" srcset="images/products/raspberry-cart@2x.jpg 2x"
                       width="46" height="46" alt="Шарик малинового цвета">
                     </picture>
-                    <a class="cart__item-info">
+                    <a class="cart__item-info" href="#">
                       <h3 class="cart__item-title">Малинка</h3>
                       <p class="cart__item-calculation">
                         <span class="cart__item-quantity">1</span>
-                        <span> кг х </span>
+                        <span>&nbsp;кг&nbsp;х&nbsp;</span>
                         <span class="cart__item-price">310</span>
-                        <span> ₽</span>
+                        <span>&nbsp;₽</span>
                       </p>
                     </a>
                     <b class="cart__item-amount">
                       310
-                      <span> ₽</span>
+                      <span>&nbsp;₽</span>
                     </b>
-                    <button type="button" class="button button--cross">
+                    <button class="button button--cross" type="button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
@@ -178,25 +183,25 @@
                       <img class="cart__item-photo" src="images/products/bubble-gum-cart.jpg" srcset="images/products/bubble-gum-cart@2x.jpg 2x"
                       width="46" height="46" alt="Шарик бирюзового цвета с разноцветными горошинками">
                     </picture>
-                    <a class="cart__item-info">
+                    <a class="cart__item-info" href="#">
                       <h3 class="cart__item-title">Бабл-гам</h3>
                       <p class="cart__item-calculation">
                         <span class="cart__item-quantity">1,5</span>
-                        <span> кг х </span>
+                        <span>&nbsp;кг&nbsp;х&nbsp;</span>
                         <span class="cart__item-price">320</span>
-                        <span> ₽</span>
+                        <span>&nbsp;₽</span>
                       </p>
                     </a>
                     <b class="cart__item-amount">
                       480
-                      <span> ₽</span>
+                      <span>&nbsp;₽</span>
                     </b>
-                    <button type="button" class="button button--cross">
+                    <button class="button button--cross" type="button">
                       <span class="visually-hidden">Удалить из корзины</span>
                     </button>
                   </li>
                 </ul>
-                <button type="button" class="button button--color">Оформить заказ</button>
+                <button class="button button--color" type="button">Оформить заказ</button>
                 <div class="cart__total">
                   <span>Итого:&nbsp;</span>
                   <span class="cart__total-price">
@@ -205,9 +210,9 @@
                   <span>&nbsp;₽</span>
                 </div>
               </div>
-            </div>
-            <div class="popover cart__popover-empty">
-              <h2 class="popover__title">Ваша корзина пока пуста</h2>
+              <div class="cart__empty">
+                <h2 class="popover__title">Ваша корзина пока пуста</h2>
+              </div>
             </div>
           </li>
         </ul>
@@ -228,7 +233,7 @@
             </a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__link--current" aria-current="page">
+            <a class="breadcrumbs__link breadcrumbs__link--current" aria-current="page" href="#">
               Сливочное мороженое
             </a>
           </li>
@@ -361,7 +366,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -389,7 +394,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -417,7 +422,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -445,7 +450,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -473,7 +478,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -501,7 +506,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -529,7 +534,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -557,7 +562,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -585,7 +590,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -613,7 +618,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -641,7 +646,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -669,7 +674,7 @@
                 </b>
                 <a class="product__button button button--color" href="#">
                   <svg class="product__button-icon" width="16" height="16" aria-hidden="true">
-                    <use xlink:href="images/icons/stack.svg#cart"></use>
+                    <use href="images/icons/stack.svg#cart"></use>
                   </svg>
                   <span class="visually-hidden">
                     Положить в корзину
@@ -682,14 +687,14 @@
         <section class="catalog-pagination">
           <h3 class="visually-hidden">Перемещение по страницам найденных товаров</h3>
           <button class="button catalog-pagination__button" type="button">Показать ещe</button>
-          <a class="catalog-pagination__item catalog-pagination__toggle catalog-pagination__toggle--prev catalog-pagination__toggle--disabled">
+          <a class="catalog-pagination__item catalog-pagination__toggle catalog-pagination__toggle--prev catalog-pagination__toggle--disabled" href="#">
             <span class="visually-hidden">
               Предыдущая страница
             </span>
           </a>
           <ol class="catalog-pagination__list">
             <li class="catalog-pagination__item catalog-pagination__item--current">
-              <a class="catalog-pagination__link" aria-current="page">1</a>
+              <a class="catalog-pagination__link" aria-current="page" href="#">1</a>
             </li>
             <li class="catalog-pagination__item">
               <a class="catalog-pagination__link" href="#">2</a>
